@@ -1,0 +1,55 @@
+{
+    "questions": [
+      {
+        "id": 0,
+        "question": "Explore our website's jungle for an immersive adventure. Now, enter 'START' to begin.",
+        "answer": "START"
+      },
+      {
+        "id": 1,
+        "question": "You are new to the jungle, Find the place where newcomers go to introduce themselves and get WELCOME party.",
+        "answer": "I am new here!"
+      },
+      {
+        "id": 2,
+        "question": "Response to your request at HEADERS party has hidden information. Peek at them closely to uncover a secret.",
+        "answer": "SHH! Some one found us"
+      },
+      {
+        "id": 3,
+        "question": "You've stored something important. Check where you keep your snacks.",
+        "answer": "Yummy, food!"
+      },
+      {
+        "id": 4,
+        "question": "The jungle's blueprint holds secrets. Investigate its layout carefully.",
+        "answer": "Nice, You explored the DOM!!"
+      },
+      {
+        "id": 5,
+        "question": "There's something crawling around in here. How can you stop it?",
+        "answer": "Dangerous, Web Crawler"
+      },
+      {
+        "id": 6,
+        "question": "How did you ask to come here? Figure out the way you requested entry.",
+        "answer": "GET"
+      },
+      {
+        "id": 7,
+        "question": "Something sweet is waiting for you. Check where treats are stored.",
+        "answer": "Eat until you are full!"
+      },
+      {
+        "id": 8,
+        "question": "You're almost out. Look for the path that leads you to ESCAPE.",
+        "answer": "Let's escape!"
+      },
+      {
+        "id": 9,
+        "question": "Well done, you survived!",
+        "answer": ""
+      }
+    ]
+  }
+  

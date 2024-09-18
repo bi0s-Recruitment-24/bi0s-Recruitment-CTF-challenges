@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>HEADing Hurdles</title>
+</head>
+<style>
+    body{
+        background-image: url('/hack.jpg');
+    }
+    .box {
+        position: absolute;
+        top: 450px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 35%;
+        height: 35%;
+        background-color: rgba(255, 255, 255, 0.741);
+        text-align: center;
+        padding: 50px;
+        position: relative;
+        font-size: 2em;
+        border-radius: 10px;
+    }
+
+     h1 {
+  overflow: hidden; 
+  border-right: .15em solid orange;
+  margin: 0 auto;
+  letter-spacing: .1em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(8, 118, 70); }
+}
+</style>
+<body>
+    <div class="box">
+        <h1><%= info %></h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+* {
+    user-select: none;
+}
+
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    width: 100dvw;
+    overflow-x: hidden;
+}
+
+body * {
+    color: var(--secondary-color);
+}
+  
+.msgBar input[type="text"] {
+    z-index: 999;
+    position: fixed;
+    right: calc(70.1% - 42dvw);
+    bottom: 5%;
+    border: 0.1px solid grey;
+    background-color: black;
+    padding-left: 1.5%;
+    margin-right: 1.6%;
+    flex: 1;
+    height: 52px;
+    width: 40dvw;
+    border-radius: 10px;
+    font-size: 14.5px;
+    font-family: "Noto", sans-serif;
+    cursor: text;
+}
+
+.msgBar input[type="text"]:focus {
+    outline: none;
+    background-color: rgb(15, 15, 15);
+}
+  
+.msgBar button[type="submit"] {
+    z-index: 999;
+    position: fixed;
+    right: 30.3%;
+    bottom: 6.5%;
+    padding: 7.5px 7.5px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.msgBar button[type="submit"]:hover {
+    background-color: rgb(75, 73, 73);
+}
+  
+.send {
+    display: block;
+    height: 15px;
+}
+
+.htmlElement {
+    opacity: 0;
+    margin-bottom: 8%;
+    margin-top: 8%;
+    align-items: center;
+    transition: all 1s;
+}
+
+.htmlElement code {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border: 0.05px solid grey;
+    border-radius: 4px;
+    max-width: 50dvw;
+    min-width: 50dvw;
+    min-height: 5dvh;
+    background-color: rgba(45, 45, 45, 0.555);
+}
+
+.external {
+    padding: 0;
+    margin: 0;
+}
+
+.fade {
+    z-index: 98;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 11dvh;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, black);
+    pointer-events: none;
+}
+
+nav {
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    border-bottom: 0.2px solid grey;
+    height: 7.5dvh;
+    width: 90dvw;
+    background-color: black;
+}
+
+.logo {
+    font-family: "Nutino", sans-serif;
+}
+
+nav * {
+    z-index: 999;
+}
+
+.fade-top {
+    height: 8dvh;
+    position: fixed;
+    top: 3.8%;
+    width: 100%;
+    z-index: 998;
+    background: linear-gradient(to top, transparent, black);
+    pointer-events: none;
+}
+
+.main {
+    width: 90%;
+    margin: 5em auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.main p {
+    color: whitesmoke;
+    font-size: 2rem;
+    font-family: "OpenSans", sans-serif;
+}
+
+.hint {
+    margin-top: 2em;
+    font-style: italic;
+    color: grey;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hint p {
+    font-family: "Nunito", sans-serif;
+}
+
+.hint code {
+    color: rgb(22, 158, 22);
+}
+
+#chatBtn {
+    width: 45px;
+    text-align: center;
+    margin-top: 2.5%;
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: black;
+    border: 0.2px solid white;
+    border-radius: 2px;
+    transition: all 0.6s;
+}
+
+#chatBtn:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.6s;
+}
+
+#chatNtm:active {
+    background-color: grey;
+}

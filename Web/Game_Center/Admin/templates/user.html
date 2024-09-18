@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <link rel="stylesheet" href="../static/userstyle.css">
+</head>
+<body>
+    <div class="navbar">
+        <a class="active" href="/">Home</a>
+        <a class="about" href="/about">About</a>
+    
+    
+        <form action="/profile">
+            <button type="submit" name="user_id" value="1" style="border: none; background: none; padding: 0;">
+                <img src="../static/pfp1.png" alt="Profile Picture">
+            </button>
+        </form>
+    </div>
+    <div class="main">
+    <h1>User Details</h1>
+    <div class="total">
+    <div id ="pfp">
+        <img src="../static/pfp1.png">
+    </div>
+    <div class="head">
+    <h2 id="name">{{name}}</h2>
+
+    <div class="details">
+    <h3 id="titlelist">Purchased Game:</h3>
+    <ul>
+        {% for i in games %}
+        <li id="list">{{ i }}</li>
+        {% endfor %}
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

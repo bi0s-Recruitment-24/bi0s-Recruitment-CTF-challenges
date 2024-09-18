@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Switcher</title>
+  <style>
+    body {
+      height: 100%;
+      background-image: url("./Uploads/waldemar-U3Ptj3jafX8-unsplash.jpg");
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    select option[value="hi.txt"] { 
+            display: none; 
+        } 
+
+    h1 {
+      color: white;
+      text-align: center;
+    }
+    #contentArea {
+      background-color: dimgrey;
+      border: 10px double black;
+      border-radius: 10px;
+      padding: 20px 50px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 1.6;
+    }
+    #languageSelect {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .watermark {
+            font-size: 12px;
+            color: #999;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+  </style>
+</head>
+<body>
+
+  <h1>The Folk Of The Ancient Explorer</h1>
+<!-- NO SECRETS?????!!@#@#!@$$% -->
+  <select id="languageSelect">
+    <option value="en.txt">English</option>
+    <option value="hi.txt">Secret ;)</option>
+    <option value="fr.txt">French</option>
+    <option value="gm.txt">German</option>
+  </select>
+  <div id="contentArea"></div>
+
+  <script>
+    document.getElementById('languageSelect').addEventListener('change', function() {
+      const selectedLanguage = this.value;
+      window.location.href = `/?lang=${selectedLanguage}`;
+    });
+
+    function loadContent() {
+      const lang = new URLSearchParams(window.location.search).get('lang') || 'en.txt';
+      fetch(`/content?lang=${lang}`)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('contentArea').innerHTML = data;
+        })
+        .catch(error => {
+          console.error('Error fetching content:', error);
+        });
+    }
+
+    loadContent();
+  </script>
+  <div class="watermark">Powered by Apache<br>Debian - bullseye</div>
+</body>
+</html>

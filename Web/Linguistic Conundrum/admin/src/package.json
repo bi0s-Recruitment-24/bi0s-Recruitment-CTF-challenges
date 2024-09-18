@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "k0walzk1",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

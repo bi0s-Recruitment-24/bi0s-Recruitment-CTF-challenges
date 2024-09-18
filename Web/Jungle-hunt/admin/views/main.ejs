@@ -1,0 +1,12 @@
+<%- include('partials/header'); -%>
+
+<h2><%= question %></h2>
+<h3><%= status %></h3>
+
+<form action="/submitAnswer" method="post">
+    <input id="answer" name="answer" type="text" autocomplete="off" required>
+    <input id="submit" type="submit" value="Submit">
+</form>
+<!-- Answer-4: Nice, You explored the DOM!! -->
+
+<%- include('partials/footer'); -%>
