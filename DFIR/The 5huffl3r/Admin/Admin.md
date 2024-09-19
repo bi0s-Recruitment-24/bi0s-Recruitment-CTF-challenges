@@ -1,7 +1,11 @@
 # The 5huffl3r
 
+### Difficulty -  **Hard**
+
 ### Description:
     I've Stumbled upon an unusual data stream, but something’s not quite right.Can you help me fix it?
+
+**#Scripting #Filestructure**
 
 ### Solution
 
@@ -29,4 +33,5 @@ with open("flag.png", "wb") as f:
 ``` bi0s{cr4ck3d_th3_f1n4l_hurdl3_32412} ```
 
 ### Author :
-`kr4z31n`
+
+**```kr4z31n```**

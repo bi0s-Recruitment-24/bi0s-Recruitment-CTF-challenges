@@ -1,8 +1,11 @@
 # M3ta Qu35t
 
+### Difficulty -  **Beginner**
+
 ### Description :
     Hidden? Not really.There’s more than meets the eye.
 
+**#Steganography**
 ### Flag format
 
 `bi0s{...}`
@@ -16,5 +19,6 @@ On using exiftool/strings we see metadata in the png file which has a rot13 enco
 
 ```bi0s{4s_e45y_as_th4t_2546}```
 
-### Author 
-`kr4z31n` 
+### Author :
+
+**```kr4z31n```**

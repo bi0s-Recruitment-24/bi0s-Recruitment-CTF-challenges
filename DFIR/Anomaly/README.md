@@ -5,6 +5,8 @@
 ### Description
 I found something unusual in the network data. Can you take a closer look and find out what’s hidden within it?
 
+**#Steganography #Filestructure**
+
 ### Short Writeup
 Export flag.zip from the given PCAP file, which contains flag.png. After fixing the image, the flag can be revealed
 
