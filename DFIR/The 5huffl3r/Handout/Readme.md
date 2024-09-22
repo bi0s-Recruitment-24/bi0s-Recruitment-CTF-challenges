@@ -3,8 +3,8 @@
 ### Difficulty -  **Hard**
 
 ### Description:
-    I've Stumbled upon an unusual data stream, but something’s not quite right.Can you help me fix it?
-    
+The image you’re after isn’t as it seems.The first bytes hold a secret that echoes through the entire file. With a bit of careful work, you can put the pieces back in place. Can you reveal what’s hidden?
+
 **#Scripting #Filestructure**
 
 ### Flag format 
